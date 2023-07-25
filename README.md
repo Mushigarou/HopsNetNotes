@@ -1,40 +1,40 @@
-# NetPractice
+# HopsNetNotes
 ![Licence](https://img.shields.io/badge/License-MIT-blue.svg)
 ![ReadMe](https://img.shields.io/badge/ReadMe-018EF5?logo=readme&logoColor=fff&style=flat-square)
 
 <div id="top"></div>
 
 ## Content
-- [What Is TCP/IP?](https://github.com/LeakedByteBuster/NetPractice#what-is-tcpip)
-- [Terminology](https://github.com/LeakedByteBuster/NetPractice/tree/main#terminology)
-- [What TCP/IP Can be Used For?](https://github.com/LeakedByteBuster/NetPractice/tree/main#what-tcpip-can-be-used-for-non-exhaustive-list)
-- [A Brief Look at TCP/IP Model](https://github.com/LeakedByteBuster/NetPractice/tree/main#a-brief-look-at-tcpip-model)
-- [OSI Model](https://github.com/LeakedByteBuster/NetPractice/tree/main#osi-model)
-  - [Physical Layer - Transporting Bits](https://github.com/LeakedByteBuster/NetPractice/tree/main#physical-layer---transporting-bits)
-  - [Data Link Layer - Hop to Hop](https://github.com/LeakedByteBuster/NetPractice/tree/main#data-link-layer---hop-to-hop)
-  - [Network Layer - End to End](https://github.com/LeakedByteBuster/NetPractice/tree/main#data-link-layer---hop-to-hop)
-    - [IP Addresses and MAC addresses](https://github.com/LeakedByteBuster/NetPractice/tree/main#ip-addresses-and-mac-addresses)
-  - [Transport Layer - Service to Service](https://github.com/LeakedByteBuster/NetPractice/tree/main#transport-layer---service-to-service)
-  - [Overview Of The OSI Model](https://github.com/LeakedByteBuster/NetPractice/tree/main#overview-of-osi-model)
-- [IPv4 Subnetting](https://github.com/LeakedByteBuster/NetPractice/tree/main#ipv4-subnetting)
-  - [What is subnetting](https://github.com/LeakedByteBuster/NetPractice/tree/main#what-is-subnetting) 
-  - [How To Write A CheatSheet?](https://github.com/LeakedByteBuster/NetPractice/tree/main#how-to-write-a-cheatsheet)
-  - [How To Find The 7 Attributes of a Given IP Address?](https://github.com/LeakedByteBuster/NetPractice/tree/main#how-to-find-the-7-attributes-of-a-given-ip-address)
-  - [Tips For Solving The 7 Attributes Faster](https://github.com/LeakedByteBuster/NetPractice/tree/main#tips-for-solving-the-7-attributes-faster)
-  - [Subnetting In /17 - /24 Range](https://github.com/LeakedByteBuster/NetPractice/tree/main#subnetting-in-17---24-range)
-  - [Subnetting In /1 - /16 Range](https://github.com/LeakedByteBuster/NetPractice/tree/main#subnetting-in-1---16-range)
-- [Network Devices](https://github.com/LeakedByteBuster/NetPractice/tree/main#Network-Devices)
-  - [How Data Flows Through The Internet](https://github.com/LeakedByteBuster/NetPractice/tree/main#How-Data-Flows-Through-The-Internet)
-    - [Hosts](https://github.com/LeakedByteBuster/NetPractice/tree/main#hosts-)
-    - [Ip Addresses](https://github.com/LeakedByteBuster/NetPractice/tree/main#ip-addresses-)
-    - [Network](https://github.com/LeakedByteBuster/NetPractice/tree/main#network-)
-    - [Repeater](https://github.com/LeakedByteBuster/NetPractice/tree/main#repeater)
-    - [Hub](https://github.com/LeakedByteBuster/NetPractice/tree/main#hub)
-    - [Bridge](https://github.com/LeakedByteBuster/NetPractice/tree/main#bridge)
-    - [Switch](https://github.com/LeakedByteBuster/NetPractice/tree/main#switch)
-    - [Router](https://github.com/LeakedByteBuster/NetPractice/tree/main#router)
-    - [Other Network Devices](https://github.com/LeakedByteBuster/NetPractice/tree/main#other-network-devices)
-    - [For More About Networking and Subnetting](https://github.com/LeakedByteBuster/NetPractice/tree/main#for-more-information)
+- [What Is TCP/IP?](#what-is-tcpip)
+- [Terminology](#terminology)
+- [What TCP/IP Can be Used For?](#what-tcpip-can-be-used-for-non-exhaustive-list)
+- [A Brief Look at TCP/IP Model](#a-brief-look-at-tcpip-model)
+- [OSI Model](#osi-model)
+  - [Physical Layer - Transporting Bits](#physical-layer---transporting-bits)
+  - [Data Link Layer - Hop to Hop](#data-link-layer---hop-to-hop)
+  - [Network Layer - End to End](#data-link-layer---hop-to-hop)
+    - [IP Addresses and MAC addresses](#ip-addresses-and-mac-addresses)
+  - [Transport Layer - Service to Service](#transport-layer---service-to-service)
+  - [Overview Of The OSI Model](#overview-of-osi-model)
+- [IPv4 Subnetting](#ipv4-subnetting)
+  - [What is subnetting](#what-is-subnetting) 
+  - [How To Write A CheatSheet?](#how-to-write-a-cheatsheet)
+  - [How To Find The 7 Attributes of a Given IP Address?](#how-to-find-the-7-attributes-of-a-given-ip-address)
+  - [Tips For Solving The 7 Attributes Faster](#tips-for-solving-the-7-attributes-faster)
+  - [Subnetting In /17 - /24 Range](#subnetting-in-17---24-range)
+  - [Subnetting In /1 - /16 Range](#subnetting-in-1---16-range)
+- [Network Devices](#Network-Devices)
+  - [How Data Flows Through The Internet](#How-Data-Flows-Through-The-Internet)
+    - [Hosts](#hosts-)
+    - [Ip Addresses](#ip-addresses-)
+    - [Network](#network-)
+    - [Repeater](#repeater)
+    - [Hub](#hub)
+    - [Bridge](#bridge)
+    - [Switch](#switch)
+    - [Router](#router)
+    - [Other Network Devices](#other-network-devices)
+    - [For More About Networking and Subnetting](#for-more-information)
 
 ## What Is TCP/IP?
 ⭐ ***The Transmission Control Protocol/Internet Protocol** is a **set of protocols** (communication standards) that describe how two or more computers can **communicate over a network**.*
@@ -96,6 +96,10 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 ## OSI Model
 ⭐ ***Networking Goal** is to allow two hosts to share data between them*
 
+<div align="center">
+<img alt="OSI model with explanation" src="Images/OSI_model.png">
+</div>
+
 ### Physical Layer - Transporting Bits
 - Transporting bits by using an L1 technology
 
@@ -118,7 +122,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 💡 *Takeaway: **L2 and L3 work together** to move **data across the internet***
 
 <div align="center">
-<img alt="Sending packets using IP Addresses and MAC addresses" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/l2_l3_OSI_model.png">
+<img alt="Sending packets using IP Addresses and MAC addresses" src="Images/l2_l3_OSI_model.png">
 </div>
 
 <div align="right">
@@ -127,13 +131,13 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 
 ### Transport Layer - Service to Service
 
-⭐ ***Distinguish data streams**. This layer ensures that data is received by the right process in your host (multiple tabs in browser)*
+⭐ ***Distinguish data streams**. This layer ensures that data is received by the right process in your host (multiple tabs in the browser)*
   - 🧮 Addressing Scheme - **Ports**
     - [0 - 65535] -- TCP -- **favors reliability**
   - **Servers listen** for requests to **predefined Ports**
   - Clients **select a random** Port for **each connection**
 
-![transport layer in networking](https://github.com/Mushigarou/NetPractice/blob/main/Images/Transport%20Layer.png)
+![transport layer in networking](Images/Transport%20Layer.png)
 
 
 <div align="right">
@@ -143,14 +147,10 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 ### Overview of OSI Model
 
 <div align="center">
-<img alt="OSI model with explanation" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/OSI_model.png">
+<img alt="OSI model with explanation" src="Images/overview_osi.png">
 </div>
 
-<div align="center">
-<img alt="OSI model with explanation" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/overview_osi.png">
-</div>
-
-⭐ *Takeaway:* **Network Devices and Protocol operation on specific layers, but these are not strict rules [Exceptions: routers, ARP...]. *It is just a model***
+⭐ *Takeaway:* **Network Devices and Protocols operate on specific layers, but these are not strict rules [Exceptions: routers, Address Resotluion Protocol (ARP)...]. *It is just a model***
 
 <div align="right">
   <b><a href="#top">↥ back to top</a></b>
@@ -163,7 +163,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 ⭐ **Subnetting means dividing a network into sub-networks.**
 
 <div align="center">
-<img width="708" alt="Subnetting a network of 255 addresses" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/Subnetting.png">
+<img width="708" alt="Subnetting a network of 255 addresses" src="Images/Subnetting.png">
 </div>
 
 ➡️ **Subnetting Attributes:**
@@ -180,11 +180,11 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 </div>
 
 ### How To Write A CheatSheet?
-1️⃣ row: Start with 1, double until you reach 128 (right to left)
+**Row** 1️⃣: Start with 1, double until you reach 128 (right to left)
 
-2️⃣ row: Subtract the top row from 256 (256-1 = 255 ...)
+**Row** 2️⃣: Subtract the top row from 256 (256-1 = 255 ...)
 
-3️⃣ row: From /32, list CIDR notation (decrement by 1 from right to left)
+**Row** 3️⃣: From /32, list CIDR notation (decrement by 1 from right to left)
 
 <div align="center">
   
@@ -204,7 +204,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 
 2️⃣ : get Net ID ➡️ Next Network ➡️ BC IP ➡️ First Host ➡️ Last Host ➡️ IP addresses (Group Size)
   
-![Solving subnetting for a target IP](https://github.com/Mushigarou/NetPractice/blob/main/Images/Subnetting_Attribute.png)
+![Solving subnetting for a target IP](Images/Subnetting_Attribute.png)
 
 ### Tips For Solving The 7 Attributes Faster
 
@@ -298,7 +298,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 *💡: **In reality most of the last /2 addresses are unassignable as host addresses***
 
 <div align="center">
-<img alt="Entire IPv4 addresses" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/Entire_IPv4.png" width=70%>
+<img alt="Entire IPv4 addresses" src="Images/Entire_IPv4.png" width=70%>
 </div>
 
 ## Network Devices
@@ -320,7 +320,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
   - IPv4 is 32bit
   - Hierarchically assigned
 
-![IP addresses](https://github.com/Mushigarou/NetPractice/blob/main/Images/ip_addresses.png)
+![IP addresses](Images/ip_addresses.png)
 
 💡 : all of those hosts above exist in a network
 
@@ -342,7 +342,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
   - it's very useful to connect two hosts in different buildings, so **the signal won't decay**
 
 <div align="center">
-<img alt="how a repeater work" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/Repeater.png" width=70%>
+<img alt="how a repeater work" src="Images/Repeater.png" width=70%>
 </div>
 <div align="right">
   <b><a href="#top">↥ back to top</a></b>
@@ -355,7 +355,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 💡 **Problem**: everyone receives everyone's else data
 
 <div align="center">
-<img alt="a hub connected to 4 hosts" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/hub.png" width=70%>
+<img alt="a hub connected to 4 hosts" src="Images/hub.png" width=70%>
 </div>
 <div align="right">
   <b><a href="#top">↥ back to top</a></b>
@@ -368,7 +368,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
   - Bridge learn which hosts are on each side
 
 <div align="center">
-<img alt="Bridge connected to two Hubs" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/Bridge.png" width=70%>
+<img alt="Bridge connected to two Hubs" src="Images/Bridge.png" width=70%>
 </div>
 <div align="right">
   <b><a href="#top">↥ back to top</a></b>
@@ -382,7 +382,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
     - Learns **which hosts** are on **each port**
 
 <div align="center">
-<img alt="switch connects hosts within same network" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/Switch.png" width=70%>
+<img alt="switch connects hosts within same network" src="Images/Switch.png" width=70%>
 </div>
 <div align="right">
   <b><a href="#top">↥ back to top</a></b>
@@ -400,7 +400,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
 💡 - **Routing Table** - all known networks for a Router
 
 <div align="center">
-<img alt="router connected to switches" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/Router.png" width=70%>
+<img alt="router connected to switches" src="Images/Router.png" width=70%>
 </div>
 
 ⭐ ***Routing** is the process of moving data between networks*
@@ -410,7 +410,7 @@ Link + Physical layer   | Mac Address, Fiber, Wireless, Ethernet Cables... |
   - **Primary purpose** of a switch is *Switching*
 
 <div align="center">
-<img alt="Sending packets through the internet" src="https://github.com/Mushigarou/NetPractice/blob/main/Images/Internet_routers.png" width=70%>
+<img alt="Sending packets through the internet" src="Images/Internet_routers.png" width=70%>
 </div>
 
 </div>
